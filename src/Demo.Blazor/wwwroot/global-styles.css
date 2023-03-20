@@ -1,0 +1,27 @@
+/* Your Global Styles */
+
+:root .lpx-theme-dim, :root .lpx-theme-dark {
+    --lpx-logo: url('/images/logo/leptonx/logo-light.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/logo-light-thumbnail.png');
+}
+
+:root .lpx-theme-light {
+    --lpx-logo: url('/images/logo/leptonx/logo-dark.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/collapse-logo1.png');
+}
+
+.lpx-brand-logo.lpx-login-big-logo {
+    display: none !important;
+}
+
+.account-module-form .row {
+    display: none !important;
+}
+
+.p-lg-5 .row {
+    display: none !important;
+}
+
+.p-lg-5 hr {
+    display: none;
+}

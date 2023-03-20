@@ -1,0 +1,52 @@
+﻿@page "/"
+@namespace Demo.Blazor.Pages
+@using System.Globalization
+@*@using Volo.Abp.AspNetCore.Components.Web.LeptonXTheme.Components*@
+@using Volo.Abp.AspNetCore.Components.Server.LeptonXTheme.Bundling
+@using Volo.Abp.Localization
+@{
+    Layout = null;
+    var rtl = CultureHelper.IsRtl ? "rtl" : string.Empty;
+}
+
+<!DOCTYPE html>
+<html lang="@CultureInfo.CurrentCulture.Name" dir="@rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <base href="~/" />
+    
+    <link href="_content/BootstrapBlazor.FontAwesome/css/font-awesome.min.css" rel="stylesheet">
+    @*<link href="_content/BootstrapBlazor/css/bootstrap.blazor.bundle.min.css" rel="stylesheet">   *@
+    <link href="/BootstrapBlazorTabs/bootstrap.blazor.bundle.min.css" rel="stylesheet">
+    
+    <abp-style-bundle name="@BlazorLeptonXThemeBundles.Styles.Global" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/_content/Elsa.Designer.Components.Web/elsa-workflows-studio/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/_content/Elsa.Designer.Components.Web/elsa-workflows-studio/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="/_content/Elsa.Designer.Components.Web/elsa-workflows-studio/assets/fonts/inter/inter.css">
+    <link rel="stylesheet" href="/_content/Elsa.Designer.Components.Web/elsa-workflows-studio/elsa-workflows-studio.css">
+</head>
+<body class="abp-application-layout @rtl">
+    <component type="typeof(App)" render-mode="Server" />
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <abp-script-bundle name="@BlazorLeptonXThemeBundles.Scripts.Global" />
+    <script src="_content/BlazorComponent/js/blazor-component.js"></script>
+    <script src="_content/BootstrapBlazor/js/bootstrap.blazor.bundle.min.js"></script>
+
+    <script src="/_content/Elsa.Designer.Components.Web/monaco-editor/min/vs/loader.js"></script>
+    <script type="module" src="/_content/Elsa.Designer.Components.Web/elsa-workflows-studio/elsa-workflows-studio.esm.js"></script>
+    
+</body>
+</html>

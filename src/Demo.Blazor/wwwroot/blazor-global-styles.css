@@ -1,0 +1,152 @@
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* .btn { */
+/* --bs-btn-padding-x: 0px !important; */
+/* --bs-btn-padding-y: 0px !important; */
+/* } */
+/*:root .lpx-theme-dim, :root .lpx-theme-dark .lpx-brand-logo {
+    --lpx-logo: url('/images/logo/leptonx/logo-light.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/collapse-logo.png') !important;
+}
+
+:root .lpx-theme-light {
+    --lpx-logo: url('/images/logo/leptonx/logo-dark.png');
+    --lpx-logo-icon: url('/images/logo/leptonx/collapse-logo.png') !important;
+}
+*/
+/* Your Global Styles */
+
+.lpx-brand-logo {
+    background-image: url("images/logo/leptonx/logo.png") !important;
+}
+
+
+.dxbl-pager-container {
+    --dxbl-pager-container-padding-x: 0px !important;
+    --dxbl-pager-container-padding-y: 0.5rem;
+    --dxbl-pager-container-spacing: 0.5rem;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: var(--dxbl-pager-container-padding-y) var(--dxbl-pager-container-padding-x) 0;
+    padding-top: 0px !important;
+}
+
+.hover-trigger .lpx-sidebar-container:not(:hover) .lpx-brand-logo {
+    background-image: url("images/logo/leptonx/collapse-logo1.png") !important;
+}
+
+.dxbl-grid-group-panel-container .dxbl-grid-header {
+    border: none !important;
+}
+
+.dxbl-grid-group-panel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 0px !important;
+}
+
+.btn-icon-like {
+    height: 30px !important;
+    width: 30px !important;
+    background-size: cover;
+    background-image: url('images/icons/Delete.png');
+}
+
+.btn-icon-edit {
+    height: 25px !important;
+    width: 25px !important;
+    background-size: cover;
+    background-image: url('images/icons/Edit.png');
+}
+
+.RecipeGroup {
+    height: 450px;
+    width: 950px !important;
+    padding: 10px !important;
+}
+
+.RecipeGroup2 {
+    height: 640px;
+    width: 900px !important;
+}
+
+.RecipeGroup3 {
+    height: 150px;
+    width: 900px !important;
+}
+
+.RecipeGroup4 {
+    height: 500px;
+    width: 900px !important;
+}
+
+.RecipeGroup5 {
+    height: 500px;
+    width: 900px !important;
+}
+
+.RecipeGroup6 {
+    height: 260px;
+    width: 900px !important;
+}
+
+.dxbl-popup {
+    max-width: none !important;
+}
+
+
+
+.dxbl-fl .dxbl-row {
+    padding: 10px !important;
+}
+
+.dxbl-grid > .dxbl-grid-top-panel > .dxbl-grid-search-box-container {
+    margin-left: auto;
+    width: var(--dxbl-grid-search-box-container-width);
+    padding: var(--dxbl-grid-search-box-container-padding-y) var(--dxbl-grid-search-box-container-padding-x);
+    height: 48px !important;
+}
+
+.lpx-sidebar-container .lpx-sidebar .lpx-nav .lpx-nav-menu {
+    background-color: var(--lpx-navbar-color);
+    max-width: 280px;
+    overflow-y: auto !important;
+    height: calc(100vh - 125px) !important;
+}

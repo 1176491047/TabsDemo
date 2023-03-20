@@ -1,0 +1,34 @@
+﻿@page "/TestPage2"
+@using DevExpress.Blazor
+@using BootstrapBlazor.Components
+@attribute [TabItemOption(Text="测试页面2")]
+
+
+                        <DxGrid @ref="Grid"
+                Data="@RecipeList"
+                ShowFilterRow="true"
+                PopupEditFormCssClass="RecipeGroup5" 
+                        FocusedRowEnabled="true">
+            <Columns>
+                <DxGridDataColumn FieldName="@nameof(RecipeValueSettingDto.LimitTemplateName)" Caption="列1" />
+                <DxGridDataColumn FieldName="@nameof(RecipeValueSettingDto.Key)" Caption="列2" />
+                <DxGridDataColumn FieldName="@nameof(RecipeValueSettingDto.Type)" Caption="列3" />
+                <DxGridDataColumn FieldName="@nameof(RecipeValueSettingDto.TopLimit)" Caption="列4" />
+                <DxGridDataColumn FieldName="@nameof(RecipeValueSettingDto.LowerLimit)" Caption="列5" />
+                <DxGridCommandColumn Width="150px">
+                    <CellDisplayTemplate>
+                        @{
+                            <DxButton Click="() => Grid.StartEditDataItemAsync(context.DataItem)"
+                                  RenderStyle="ButtonRenderStyle.None" IconCssClass="btn-icon-edit" style="height: 25px; width: 25px" />
+
+                        }
+                    </CellDisplayTemplate>
+                </DxGridCommandColumn>
+            </Columns>
+        </DxGrid>
+
+
+
+@code {
+
+}

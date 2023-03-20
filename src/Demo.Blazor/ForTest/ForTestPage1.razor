@@ -1,0 +1,24 @@
+﻿@page "/TestPage1"
+<h3>ForTestPage1</h3>
+@using BootstrapBlazor.Components
+@attribute [TabItemOption(Text="测试页面1")]
+@using DevExpress.Blazor;
+
+        <DxChart Data="@dataSource">
+    <DxChartBarSeries Name="2017" 
+                      Filter="@((SaleInfo s) => s.Date.Year == 2017)"
+                      ArgumentField="@(s => s.City)" 
+                      ValueField="@(s => s.Amount)"
+                      SummaryMethod="Enumerable.Sum" />
+    <DxChartBarSeries Name="2018" 
+                      Filter="@((SaleInfo s) => s.Date.Year == 2018)"
+                      ArgumentField="@(s => s.City)" 
+                      ValueField="@(s => s.Amount)"
+                      SummaryMethod="Enumerable.Sum" />
+    <DxChartBarSeries Name="2019" 
+                      Filter="@((SaleInfo s) => s.Date.Year == 2019)"
+                      ArgumentField="@(s => s.City)" 
+                      ValueField="@(s => s.Amount)"
+                      SummaryMethod="Enumerable.Sum" />
+    <DxChartLegend Position="RelativePosition.Outside" HorizontalAlignment="HorizontalAlignment.Right" />
+</DxChart>
